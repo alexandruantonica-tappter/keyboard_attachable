@@ -12,7 +12,7 @@ class KeyboardAnimationInjector {
   final TickerProvider _tickerProvider;
 
   KeyboardAnimationController getPlatformController() {
-    final bool isAndrroid = defaultTargetPlatform == TargetPlatform.android;
+    final bool isAndroid = defaultTargetPlatform == TargetPlatform.android;
     if (isAndroid) {
       return AndroidKeyboardAnimationController(vsync: _tickerProvider);
     } else {
